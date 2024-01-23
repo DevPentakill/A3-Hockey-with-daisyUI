@@ -14,14 +14,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
-        *{
+        * {
             margin: 0;
-            padding:0;
+            padding: 0;
         }
+
         .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        infocolour: 'rgba(19, 19, 24, 0.60)',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="font-manrope md:container md:mx-auto">
@@ -38,7 +50,8 @@
             <div id="slide1" class="carousel-item relative w-full">
                 <!-- slider1 image -->
                 <div>
-                    <img src="./Images/banner1.png" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
+                    <img src="./Images/banner1.png"
+                        class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
                 </div>
                 <!-- slider arrows -->
                 <div class="absolute flex gap-2 transform -translate-y-1/2 left-24 bottom-2 lg:left-6 lg:bottom-10">
@@ -51,7 +64,8 @@
             <div id="slide2" class="carousel-item relative w-full">
                 <!-- slider2 image -->
                 <div>
-                    <img src="./Images/banner2.jpg" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
+                    <img src="./Images/banner2.jpg"
+                        class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
                 </div>
                 <!-- slider arrows -->
                 <div class="absolute flex gap-2 transform -translate-y-1/2 left-24 bottom-2 lg:left-6 lg:bottom-10">
@@ -63,7 +77,8 @@
             <div id="slide3" class="carousel-item relative w-full">
                 <!-- slider3 image -->
                 <div>
-                    <img src="./Images/banner3.jpg" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
+                    <img src="./Images/banner3.jpg"
+                        class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
                 </div>
                 <!-- slider arrows -->
                 <div class="absolute flex gap-2 transform -translate-y-1/2 left-24 bottom-2 lg:left-6 lg:bottom-10">
@@ -75,7 +90,8 @@
             <div id="slide4" class="carousel-item relative w-full">
                 <!-- slider4 image -->
                 <div>
-                    <img src="./Images/banner4.jpg" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
+                    <img src="./Images/banner4.jpg"
+                        class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
                 </div>
                 <!-- slider arrows -->
                 <div class="absolute flex gap-2 transform -translate-y-1/2 left-24 bottom-2 lg:left-6 lg:bottom-10">
@@ -87,7 +103,8 @@
             <div id="slide5" class="carousel-item relative w-full">
                 <!-- slider5 image -->
                 <div>
-                    <img src="./Images/banner5.jpg" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
+                    <img src="./Images/banner5.jpg"
+                        class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] rounded-2xl" />
                 </div>
                 <!-- slider arrows -->
                 <div class="absolute flex gap-2 transform -translate-y-1/2 left-24 bottom-2 lg:left-6 lg:bottom-10">
@@ -107,7 +124,56 @@
     </header>
 
     <main>
+        <!-- Hockey CLub section -->
+        <section class="text-center my-14">
+            <h2 class="text-4xl font-extrabold mb-5">Professional Hockeys Club</h2>
+            <p class="lg:max-w-3xl font-medium mb-10 mx-auto text-infocolour">Dive into the statistics of our
+                Professional Hockey Club, where every number tells a story of dedication, teamwork, and the pursuit of
+                excellence.</p>
 
+            <!-- Statistics container -->
+            <div class="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+                <!-- first card -->
+                <div class="card py-4 px-1">
+                    <div class="radial-progress text-red-500 mx-auto" style="--value:87; --size:7rem;"
+                        role="progressbar"><span class="text-black font-bold text-2xl">87%</span></div>
+                    <div class="card-body justify-center">
+                        <h2 class="text-xl font-semibold">Prayer Facility</h2>
+                        <p class="text-infocolour">Pause and reflect in our hockey club's prayer space, offering a quiet tranquility.</p>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card py-4 px-1">
+                    <div class="radial-progress text-emerald-500 mx-auto" style="--value:95; --size:7rem;"
+                        role="progressbar"><span class="text-black font-bold text-2xl">95%</span></div>
+                    <div class="card-body justify-center">
+                        <h2 class="text-xl font-semibold">Experienced Coach</h2>
+                        <p class="text-infocolour">Guided by a seasoned coach, our hockey club thrives on the wealth of
+                            experience.</p>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card py-4 px-1">
+                    <div class="radial-progress text-amber-500 mx-auto" style="--value:90; --size:7rem;"
+                        role="progressbar"><span class="text-black font-bold text-2xl">90%</span></div>
+                    <div class="card-body justify-center">
+                        <h2 class="text-xl font-semibold">Senior Player</h2>
+                        <p class="text-infocolour">Seasoned senior players bring leadership, skill, and a legacy of excellence to new heights.</p>
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="card py-4 px-1">
+                    <div class="radial-progress text-blue-500 mx-auto" style="--value:80; --size:7rem;"
+                        role="progressbar"><span class="text-black font-bold text-2xl">80%</span></div>
+                    <div class="card-body justify-center">
+                        <h2 class="text-xl font-semibold">Training Ground</h2>
+                        <p class="text-infocolour">At our state-of-the-art Training Ground, aspiring athletes sharpen their skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats container ends here -->
     </main>
 
     <footer>
