@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assinmnt3_Fahim🚀</title>
+    <!-- DaisyUi and TalwindCSS installation -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+<body class="font-manrope">
+
+    <header class="container mx-auto">
+        <!-- Nav Section Starts Here -->
+        <nav></nav>
+        <!-- Nav Section Ends here -->
+
+        <!-- Banner Section Starts Here -->
+        <div>
+            <div class="carousel w-full">
+                <!-- Slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                <!-- slider1 image -->
+
+                  <div>
+                    <img src="./Images/banner1.png" class="w-full" />
+                  </div>
+
+                  <!-- slider arrows -->
+                  <div class="absolute flex gap-1 transform -translate-y-1/2 left-5 right-5 bottom-1/3">
+                    <a href="#slide5" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div>
+
+                <!-- slide2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./Images/banner2.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./Images/banner3.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./Images/banner4.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide5" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide5" class="carousel-item relative w-full">
+                    <img src="./Images/banner5.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide4" class="btn btn-circle">❮</a> 
+                      <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div>
+                <h3>Meet all the heroes from the field</h3>
+                <p>Explore our badge collection and meet the unsung heroes of the hockey field who have left an indelible mark on the game.</p>
+              </div>
+        </div>
+        
+          <!-- Banner Section Ends Here. -->
+    </header>
+
+    <main class="container mx-auto">
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
